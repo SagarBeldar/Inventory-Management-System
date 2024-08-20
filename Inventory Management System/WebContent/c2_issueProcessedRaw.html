@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body><!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Responsive Admin &amp; Dashboard Template based on Bootstrap 5">
+	<meta name="author" content="AdminKit">
+	<meta name="keywords"
+		content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="shortcut icon" href="img/icons/icon-48x48.png" />
+
+	<link rel="canonical" href="https://demo-basic.adminkit.io/" />
+
+	<title>User Dashboard | Invenetory System</title>
+	
+	<style >
+	input{
+	
+	height: 36px;
+    width: 34rem
+	}
+	.cbody {
+    
+    padding: 0rem;
+    margin-right:2rem
+}
+	</style>
+
+	<link href="css/app.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="wrapper">
+		<nav id="sidebar" class="sidebar js-sidebar">
+			<div class="sidebar-content js-simplebar">
+				<a class="sidebar-brand" href="index.html">
+					<span class="align-middle">Invenetory System</span>
+				</a>
+
+				<ul class="sidebar-nav">
+					<li class="sidebar-header">
+						User
+					</li>
+
+					
+
+					<li class="sidebar-item active">
+						<a class="sidebar-link" href="">
+							<i class="align-middle" data-feather="log-in"></i> <span class="align-middle">Issued Processed Material</span>
+						</a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="c2_viewProcessedData.jsp">
+							<i class="align-middle" data-feather="log-in"></i> <span class="align-middle">View Issue Processed Material</span>
+						</a>
+					</li>
+                    <li class="sidebar-item">
+						<a class="sidebar-link" href="Dashboard_1.html">
+							<i class="align-middle" data-feather="log-in"></i> <span class="align-middle">Go to DashBoard</span>
+						</a>
+					</li>
+					
+
+				</ul>
+
+				
+			</div>
+		</nav>
+
+		<div class="main">
+			<nav class="navbar navbar-expand navbar-light navbar-bg">
+				<a class="sidebar-toggle js-sidebar-toggle">
+					<i class="hamburger align-self-center"></i>
+				</a>
+
+				<div class="navbar-collapse collapse">
+					<ul class="navbar-nav navbar-align">
+						
+						<li class="nav-item dropdown">
+							<a class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#"
+								data-bs-toggle="dropdown">
+								<i class="align-middle" data-feather="settings"></i>
+							</a>
+
+							<a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#"
+								data-bs-toggle="dropdown">
+								<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUyqEDp_ogPSU7wiVutAR54QRjfOovbpS8Wg&usqp=CAU " class="avatar img-fluid rounded me-1"
+									alt="Charles Hall" /> <span class="text-dark">Sagar Beldar</span>
+							</a>
+							<div class="dropdown-menu dropdown-menu-end">
+								<a class="dropdown-item" href="pages-profile.html"><i class="align-middle me-1"
+										data-feather="user"></i> Profile</a>
+								<a class="dropdown-item" href="#"><i class="align-middle me-1"
+										data-feather="pie-chart"></i> Analytics</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="index.html"><i class="align-middle me-1"
+										data-feather="settings"></i> Settings & Privacy</a>
+								<a class="dropdown-item" href="#"><i class="align-middle me-1"
+										data-feather="help-circle"></i> Help Center</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="index.html">Log out</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+            <main class="content">
+
+                <div class="container-fluid p-0">
+
+                    <div class="mb-3">
+                        <h1 class="h3 d-inline align-middle">Issued Processed Raw Material log :</h1>
+                        
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                               
+
+                                <form action="IsuseProceed_register" id="cndreq" method="post">
+                                    <div class="card-body cbody">
+                                    
+                                        <div class="row mb-4 cbody">
+                                            <div class="col-md-6 col-lg-6">
+                                                <div class="form-group">
+                                                     <label for="Id" style="margin-right: 30px" >Material Id </label>
+                                                       <input type="text" id="accountNumber" name="Id" required placeholder="Enter the Material">
+                                                </div>
+                                            </div>
+                                           
+                                        </div>
+                                        
+                                        <div class="row mb-4 cbody">
+                                            <div class="col-md-6 col-lg-6">
+                                                <div class="form-group">
+                                                     <label for="Name" style="margin-right: 30px" >Material Name </label>
+                                                       <input type="text" id="accountNumber" name="MName" required placeholder="Enter the Material">
+                                                </div>
+                                            </div>
+                                           
+                                        </div>
+                                        <div class="row mb-4 cbody">
+                                            <div class="col-md-6 col-lg-6">
+                                                <div class="form-group">
+                                                   <label for="Quantity" style="margin-right: 30px" >Quantity </label>
+                                                    <input type="text" id="accountNumber" name="Quantity" required placeholder="Enter the Quantity">
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                        <div class="row mb-4 cbody">
+                                            <div class="col-md-6 col-lg-6">
+                                                <div class="form-group">
+                                                   <label for="IssuerN" style="margin-right: 30px" >Issuer Name </label>
+                                                    <input type="text" id="accountNumber" name="IssuerN" required placeholder="Enter the Quantity">
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="row mb-4 cbody">
+                                            <div class="col-md-6 col-lg-6">
+                                                <div class="form-group">
+                                                   <label for="IssuedD" style="margin-right: 30px" >Issued Date </label>
+                                                    <input type="text" id="accountNumber" name="IssuedD" required placeholder="Enter the Quantity">
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="row mb-4 cbody">
+                                            <div class="col-md-6 col-lg-6">
+                                                <div class="form-group">
+                                                   <label for="IssuedT" style="margin-right: 30px" >Issued Time </label>
+                                                    <input type="text" id="accountNumber" name="IssuedT" required placeholder="Enter the Quantity">
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                       
+                                        <div class="row mb-4 cbody">
+                                            <div class="col-md-6 col-lg-6">
+                                                <div class="form-group">
+                                                     <label for="CostU" style="margin-right: 30px" >Cost per Unit </label>
+                                                       <input type="text" id="accountNumber" name="CostU" required placeholder="Enter the Cost">
+                                                </div>
+                                            </div>
+                                      
+                                    
+                                   <div style="text-align:center; margin-top:20px" >
+                                        <button type="submit" class="btn btn-success mr-2">Add Processed Material</button>
+                                        
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                   </div>
+
+            </main>
+
+
+
+			
+		</div>
+	</div>
+
+	<!--  <script src="js/app.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+     <script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+     <script>
+     var form = document.getElementById('cndreq');
+     
+        function showAlert(event) {
+        	event.preventDefault();
+            swal({
+                title:"CND Request!",
+                text: "CND REquest sent Successfully !",
+                icon: "success",
+            });
+            
+     		form.reset();
+        }
+     form.addEventListener('submit',showAlert);
+     
+       // showAlert();
+    </script>-->
+	
+		
+	
+</body>
+
+</html>
+
+</body>
+</html>
